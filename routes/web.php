@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('fullcalendar.index');
 });
 
 Route::prefix('fullcalendar')->name('fullcalendar.')->group(function () {
