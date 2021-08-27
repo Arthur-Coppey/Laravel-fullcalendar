@@ -20,6 +20,6 @@ Route::get('/', function () {
 Route::prefix('fullcalendar')->name('fullcalendar.')->group(function () {
     Route::get('/', 'FullCalendarController@index')->name('index');
     Route::post('/create', 'FullCalendarController@create')->name('create');
-    Route::post('/update', 'FullCalendarController@update')->name('update');
-    Route::post('/delete', 'FullCalendarController@delete')->name('delete');
+    Route::put('/update', 'FullCalendarController@update')->name('update');
+    Route::delete('/delete', 'FullCalendarController@delete')->name('delete');
 });
