@@ -11,6 +11,8 @@ You can also see events from [this](https://calendar.google.com/calendar/embed?s
 * [docker](https://www.docker.com/) service running
 
 ## Setup
-`git clone https://github.com/Arthur-Coppey/Laravel-fullcalendar.git && cd Laravel-fullcalendar
-./setup.sh`
+```sh
+git clone https://github.com/Arthur-Coppey/Laravel-fullcalendar.git && cd Laravel-fullcalendar
+./setup.sh
+```
 The setup script should make everything work, you can then enter http://localhost in your browser
