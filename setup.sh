@@ -1,9 +1,9 @@
 #!/bin/sh
 composer install
 npm install
-./vendor/bin/sail up -d
+./sail up -d
 
-MYSQL_CONTAINER_HOSTNAME=$(vendor/bin/sail ps | grep mysql | sed -E 's/^(\S+).*/\1/g')
+MYSQL_CONTAINER_HOSTNAME=$(./sail ps | grep mysql | sed -E 's/^(\S+).*/\1/g')
 
 export DB_HOST=127.0.0.1 && sed -E -i.bak "s/^DB_HOST=.*/DB_HOST=$DB_HOST/g" .env
 
